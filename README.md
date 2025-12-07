@@ -21,10 +21,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Create Release action
-        uses: lgvalle/create-release-action@release/v0.3.0
+        uses: lgvalle/create-release-action@release/v0.4.3
         with:
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-* `openai-api-key` is an optional parameter. If present it will create a summary a human-readable summary of the changelog
+* `openai-api-key` is an optional parameter. If present, it will create a summary a human-readable summary of the changelog
